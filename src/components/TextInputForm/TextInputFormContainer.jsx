@@ -1,13 +1,21 @@
 import { useState } from "react";
 import TextInputForm from "./TextInputForm";
+import { useNavigate } from "react-router-dom";
 
 function InputTextInputFormContainer(){
 
        const[inputType,setInputType]=useState("password");
+
        const[value,setValue]=useState("")
+
+       const navigate =useNavigate();//useNavigate is a hook that returns a navigate function
+
         function handleFormSubmit(event){
           event.preventDefault();
           console.log("for submitted",value);
+          if(value)
+            // if we something in value tjan we want to go to the play page
+          navigate("/play");
         }
         function handleTextInputChange(event){
           console.log("Text input changed");
