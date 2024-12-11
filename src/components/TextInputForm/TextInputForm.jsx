@@ -1,24 +1,28 @@
 import Button from '../Button/Button'
 import TextInput from '../TextInput/TextInput'
- function TextInputForm({handleFormSubmit,handleTextInputChange}){
+ function TextInputForm({inputType,handleFormSubmit,handleTextInputChange,handleShowHideCheck}){
     return(
         <form onSubmit={handleFormSubmit}>
-            <TextInput
-     label={"Enter some text"}
-     placeholder={"Enter some text here"}
+        <TextInput
+        type={inputType}
+        label={"Enter some text"}
+          placeholder={"Enter some text here"}
      
-     onChangeHandler={handleTextInputChange}
+          onChangeHandler={handleTextInputChange}
      />
      <div>
-     <Button 
-     styleType="success" 
-     text="show/Hide"
+        <Button 
+        styleType="success" 
+        text={inputType==="password"?"show":"Hide"}
+        onClickHandler={handleShowHideCheck} 
+     
      />
+
       
      </div>
     
     <Button 
-      type="submit"
+      
       styleType="primary"
       text="Submit"
      
