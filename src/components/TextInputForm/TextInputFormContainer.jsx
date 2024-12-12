@@ -15,7 +15,7 @@ function InputTextInputFormContainer(){
           console.log("for submitted",value);
           if(value)
             // if we something in value tjan we want to go to the play page
-          navigate("/play");
+          navigate("/play",{state:{wordSelected:value}});
         }
         function handleTextInputChange(event){
           console.log("Text input changed");
