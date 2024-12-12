@@ -12,6 +12,7 @@ import TextInput from '../TextInput/TextInput'
      />
      <div>
         <Button 
+        type="button"
         styleType="success" 
         text={inputType==="password"?"show":"Hide"}
         onClickHandler={handleShowHideCheck} 
@@ -22,7 +23,7 @@ import TextInput from '../TextInput/TextInput'
      </div>
     
     <Button 
-      
+      type="submit"
       styleType="primary"
       text="Submit"
      

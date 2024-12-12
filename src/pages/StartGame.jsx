@@ -1,7 +1,10 @@
+import InputTextInputFormContainer from "../components/TextInputForm/TextInputFormContainer"
+
 function StartGame(){
     return(
         <div>
-            Hello
+            Start Game
+            <InputTextInputFormContainer/>
         </div>
     )
 
