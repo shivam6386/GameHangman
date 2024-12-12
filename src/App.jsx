@@ -24,8 +24,15 @@ function App() {
   
       <Route path='/start'      element={<StartGame/>} />
       < Route path='/play'  element={<PlayGame/>}/>
+
       <Route path='/'      element={<Home/>}/>
+
+
+
      
+
+      
+
     </Routes>
     
      
