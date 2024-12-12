@@ -1,6 +1,10 @@
+import { useLocation } from "react-router-dom";
+
 function PlayGame(){
+  const {state}=useLocation();
+
     return(
-      <div>Playgame</div>
+      <div>Playgame {state.wordSelected}</div>
     )
 }
 
