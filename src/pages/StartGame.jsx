@@ -9,8 +9,7 @@ function StartGame(){
             Start Game
             <InputTextInputFormContainer/>
         </div>
-        <h1>Start Game</h1>
-        <InputTextInputFormContainer/>
+       
         
         
         </>

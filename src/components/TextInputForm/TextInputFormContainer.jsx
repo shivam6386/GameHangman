@@ -45,7 +45,8 @@ return(
     handleTextInputChange={handleTextInputChange}
     handleShowHideCheck={handleShowHideCheck}
     />
-)
+);
 
+}
 }
 export default InputTextInputFormContainer;
