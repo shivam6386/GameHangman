@@ -3,13 +3,18 @@ import TextInput from '../TextInput/TextInput'
  function TextInputForm({inputType,handleFormSubmit,handleTextInputChange,handleShowHideCheck}){
     return(
         <form onSubmit={handleFormSubmit}>
-        <TextInput
+          <div>
+
+          <TextInput
         type={inputType}
         label={"Enter some text"}
           placeholder={"Enter some text here"}
      
           onChangeHandler={handleTextInputChange}
      />
+
+          </div>
+       
      <div>
         <Button 
         type="button"
