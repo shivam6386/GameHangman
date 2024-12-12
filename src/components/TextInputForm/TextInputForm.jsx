@@ -6,8 +6,8 @@ import TextInput from '../TextInput/TextInput'
           <div>
 
           <TextInput
-        type={inputType}
-        label={"Enter some text"}
+         type={inputType}
+         label={"Enter some text"}
           placeholder={"Enter some text here"}
      
           onChangeHandler={handleTextInputChange}

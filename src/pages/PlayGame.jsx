@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-
+import MaskedText from '../components/MaskedText/MaskedText'
 function PlayGame(){
 
   const {state}=useLocation();
@@ -7,8 +7,15 @@ function PlayGame(){
 
   
     return(
-      <div>Playgame {state.wordSelected}</div>
+      <>
+      
+       <div>Playgame {state.wordSelected}</div>
+       <MaskedText text={state.wordSelected} guessedLetters={['H','E']} />
+      
+      </>
     )
+      
+      
 }
 
 export default PlayGame;
