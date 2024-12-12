@@ -13,9 +13,13 @@ function InputTextInputFormContainer(){
         function handleFormSubmit(event){
           event.preventDefault();
           console.log("for submitted",value);
-          if(value)
+          if(value){
             // if we something in value tjan we want to go to the play page
+
           navigate("/play",{state:{wordSelected:value}});
+
+
+          
         }
         function handleTextInputChange(event){
           console.log("Text input changed");
@@ -23,7 +27,7 @@ function InputTextInputFormContainer(){
           setValue(event.target.value)
         }
         function handleShowHideCheck(){
-          console.log("text input changed")
+          console.log("show and hide")
           if(inputType==="password"){
             setInputType("text")
           }
@@ -41,7 +45,8 @@ return(
     handleTextInputChange={handleTextInputChange}
     handleShowHideCheck={handleShowHideCheck}
     />
-)
+);
 
+}
 }
 export default InputTextInputFormContainer;
