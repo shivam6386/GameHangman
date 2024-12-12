@@ -5,6 +5,7 @@ import './App.css'
 import StartGame from './pages/StartGame'
 import PlayGame from './pages/PlayGame'
 import TextInputFormContainer from './components/TextInputForm/TextInputFormContainer'
+import Home from './pages/Home'
 function App() {
   
 
@@ -23,7 +24,15 @@ function App() {
   
       <Route path='/start'      element={<StartGame/>} />
       < Route path='/play'  element={<PlayGame/>}/>
+
+      <Route path='/'      element={<Home/>}/>
+
+
+
      
+
+      
+
     </Routes>
     
      
