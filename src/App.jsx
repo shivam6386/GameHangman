@@ -4,7 +4,7 @@ import './App.css'
 
 import StartGame from './pages/StartGame'
 import PlayGame from './pages/PlayGame'
-import TextInputFormContainer from './components/TextInputForm/TextInputFormContainer'
+
 import Home from './pages/Home'
 function App() {
   
