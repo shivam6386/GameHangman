@@ -10,6 +10,8 @@ import { wordContext } from './context/WordContext.js'
 import { useState } from 'react'
 
 import MultiPlayerContainer from './components/MultiPlayer/MultiPlayerContainer.jsx'
+import PlayGameContainer from './pages/PlayGameContainer.jsx'
+
 function App() {
     const [wordList,setWordList]=useState([]);
     const[word,setWord]=useState('');
@@ -26,7 +28,7 @@ function App() {
       <Routes>   
   
       <Route path='/start'      element={<StartGame/>} />
-      < Route path='/play'  element={<PlayGame/>}/>
+      < Route path='/PlayGameContainer'  element={<PlayGameContainer/>}/>
       <Route path='/MultiplayerContainer' element={<MultiPlayerContainer/>} />
 
       <Route path='/'      element={<Home/>}/>

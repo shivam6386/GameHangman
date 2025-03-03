@@ -40,7 +40,7 @@ function Home (){
       }}
       >
           
-      <Link to="/play"  >
+      <Link to="/playGameContainer"  >
        <Button
        
        text="single player game"
