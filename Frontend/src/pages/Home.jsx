@@ -40,15 +40,7 @@ function Home (){
       }}
       >
           
-      <Link to="/playGameContainer"  >
-       <Button
-       
-       text="single player game"
-       styleType="primary">
-        </Button>
-       </Link>
-
-       <br/>
+     
 
        <div className="m-2">
        <Link to= "/Start" >
